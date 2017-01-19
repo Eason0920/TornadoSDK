@@ -1,0 +1,35 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+@*<div>
+        @Html.React("ResultTable", new { })
+    </div>*@
+@*<div>
+        @Html.React("SearchBar", new { })
+    </div>*@
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="margin-bottom: 20px;">
+        <div>※ 以下搜尋結果<font color=red>皆包含</font></div>
+        <div>※ <font color=red>同音字搜尋</font></div>
+        <div>※ <font color=red>繁簡轉換搜尋</font></div>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+        <div id="searchBarContainer"></div>
+        <div id="searchResultContainer" style="padding-top: 30px;"></div>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+        <div id="searchBarContainer1"></div>
+        <div id="searchResultContainer1" style="padding-top: 30px;"></div>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+        <div id="searchBarContainer2"></div>
+        <div id="searchResultContainer2" style="padding-top: 30px;"></div>
+    </div>
+</div>
+
+@section scripts {
+    @Scripts.Render("~/bundles/home/index")
+    @*@Html.ReactInitJavaScript()*@
+}
